@@ -1,0 +1,32 @@
+{
+    "pg_connection": {
+        "dbname": "francepixels2023",
+        "host": "localhost",
+        "user":"fp",
+        "password":"francepixels"
+    },
+    "data_format": {
+        "geom_table": "carreauxgeom",
+        "geom_column": "wkb_geometry",
+        "row_column": "i",
+        "col_column": "j",
+        "context_variables": [{
+            "name": "Ind",
+            "aggregation": "SUM"
+        }]
+    },
+    "scale_operations": [
+        [11, 1],
+        [10, 2]
+    ],
+    "output": {
+        "layername": "inseedata",
+        "format": "pbf",
+        "storage": "mbtiles",
+        "verbose": false,
+        "nbquantiles": 9
+    }
+}
+
+
+
