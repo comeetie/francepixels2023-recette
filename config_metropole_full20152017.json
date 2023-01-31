@@ -1,0 +1,205 @@
+{
+    "pg_connection": {
+        "dbname": "francepixels2023",
+        "host": "localhost",
+        "user":"fp",
+        "password":"francepixels"
+    },
+    "data_format": {
+        "geom_table": "carreaux20152017",
+        "geom_column": "wkb_geometry",
+        "row_column": "i",
+        "col_column": "j",
+        "context_variables": [{
+            "name": "ind_2015",
+            "aggregation": "SUM"
+        },
+	{"name":"Men_1ind_2015",
+		"aggregation": "SUM"
+        },
+        {"name":"Men_5ind_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_prop_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_fmp_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_snv_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_surf_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_coll_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_mais_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_av45_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_45_70_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_70_90_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_ap90_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_inc_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_soc_2015",
+         "aggregation": "SUM"
+        },
+        {"name":"Ind_0_3_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_4_5_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_6_10_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_11_17_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_18_24_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_25_39_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_40_54_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_55_64_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_65_79_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_80p_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_inc_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_pauv_2015",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_2015",
+        "aggregation": "SUM"
+        },
+        {
+            "name": "ind_2017",
+            "aggregation": "SUM"
+        },
+	{"name":"Men_1ind_2017",
+		"aggregation": "SUM"
+        },
+        {"name":"Men_5ind_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_prop_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_fmp_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_snv_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_surf_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_coll_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_mais_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_av45_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_45_70_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_70_90_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_ap90_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_inc_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Log_soc_2017",
+         "aggregation": "SUM"
+        },
+        {"name":"Ind_0_3_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_4_5_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_6_10_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_11_17_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_18_24_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_25_39_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_40_54_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_55_64_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_65_79_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_80p_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Ind_inc_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_pauv_2017",
+        "aggregation": "SUM"
+        },
+        {"name":"Men_2017",
+        "aggregation": "SUM"
+        }
+    ]
+    },
+    "scale_operations": [
+        [11, 1],
+        [10, 2],
+        [9,2],
+        [8,2],
+        [7,2],
+        [6,2],
+        [5,2],
+        [4,2]
+    ],
+    "output": {
+        "layername": "inseedata20152017",
+        "format": "pbf",
+        "storage": "mbtiles",
+        "verbose": false,
+        "nbquantiles": 9
+    }
+}
+
+
+
