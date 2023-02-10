@@ -3,7 +3,7 @@
         "dbname": "francepixels2023",
         "host": "localhost",
         "user":"fp",
-        "password":"francepixels"
+        "password":"XXXX"
     },
     "data_format": {
         "geom_table": "carreauxgeom",

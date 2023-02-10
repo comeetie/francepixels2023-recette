@@ -1,18 +1,14 @@
 CREATE EXTENSION postgis;
 
 
-CREATE TABLE carreaux_metro_2015(
-IdINSPIRE  varchar(200), 
-Id_carr1km  varchar(200), 
-I_est_cr int, 
-Id_carr_n  varchar(200), 
-Groupe  varchar(200), 
-Depcom  varchar(200), 
-I_pauv  int, 
-Id_car2010 varchar(200),
+CREATE TABLE carreaux_metro_2017(
+Idcar_200m varchar(200), 
+I_est_200 int,
+Idcar_1km varchar(200),
+I_est_1km int,
+Idcar_nat varchar(200),
+Groupe varchar(200),
 Ind float,
-Men float, 
-Men_pauv float, 
 Men_1ind float,
 Men_5ind float,
 Men_prop float,
@@ -38,27 +34,23 @@ Ind_55_64 float,
 Ind_65_79 float, 
 Ind_80p float, 
 Ind_inc float, 
-I_est_1km int
+Men_pauv float, 
+Men float, 
+lcog_geo varchar(200)
 );
 
+\COPY carreaux_metro_2017 FROM './Filosofi2017_carreaux_200m_met.csv' WITH CSV header delimiter ',';
 
 
 
-\COPY carreaux_metro_2015 FROM './Filosofi2015_carreaux_200m_metropole.csv' WITH CSV header delimiter ',';
-
-
-CREATE TABLE carreaux_reun_2015(
-IdINSPIRE  varchar(200), 
-Id_carr1km  varchar(200), 
-I_est_cr int, 
-Id_carr_n  varchar(200), 
-Groupe  varchar(200), 
-Depcom  varchar(200), 
-I_pauv  int, 
-Id_car2010 varchar(200),
+CREATE TABLE carreaux_reun_2017(
+Idcar_200m varchar(200), 
+I_est_200 int,
+Idcar_1km varchar(200),
+I_est_1km int,
+Idcar_nat varchar(200),
+Groupe varchar(200),
 Ind float,
-Men float, 
-Men_pauv float, 
 Men_1ind float,
 Men_5ind float,
 Men_prop float,
@@ -84,26 +76,22 @@ Ind_55_64 float,
 Ind_65_79 float, 
 Ind_80p float, 
 Ind_inc float, 
-I_est_1km int
+Men_pauv float, 
+Men float, 
+lcog_geo varchar(200)
 );
 
+\COPY carreaux_reun_2017 FROM './Filosofi2017_carreaux_200m_reun.csv' WITH CSV header delimiter ',';
 
 
-
-\COPY carreaux_reun_2015 FROM './Filosofi2015_carreaux_200m_reg04.csv' WITH CSV header delimiter ',';
-
-CREATE TABLE carreaux_mart_2015(
-IdINSPIRE  varchar(200), 
-Id_carr1km  varchar(200), 
-I_est_cr int, 
-Id_carr_n  varchar(200), 
-Groupe  varchar(200), 
-Depcom  varchar(200), 
-I_pauv  int, 
-Id_car2010 varchar(200),
+CREATE TABLE carreaux_mart_2017(
+Idcar_200m varchar(200), 
+I_est_200 int,
+Idcar_1km varchar(200),
+I_est_1km int,
+Idcar_nat varchar(200),
+Groupe varchar(200),
 Ind float,
-Men float, 
-Men_pauv float, 
 Men_1ind float,
 Men_5ind float,
 Men_prop float,
@@ -129,10 +117,9 @@ Ind_55_64 float,
 Ind_65_79 float, 
 Ind_80p float, 
 Ind_inc float, 
-I_est_1km int
+Men_pauv float, 
+Men float, 
+lcog_geo varchar(200)
 );
 
-
-
-
-\COPY carreaux_mart_2015 FROM './Filosofi2015_carreaux_200m_reg02.csv' WITH CSV header delimiter ',';
+\COPY carreaux_mart_2017 FROM './Filosofi2017_carreaux_200m_mart.csv' WITH CSV header delimiter ',';

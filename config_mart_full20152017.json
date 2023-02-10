@@ -6,7 +6,7 @@
         "password":"XXX"
     },
     "data_format": {
-        "geom_table": "carreaux_geom_metro_2015_2017",
+        "geom_table": "carreaux_geom_mart_2015_2017",
         "geom_column": "wkb_geometry",
         "row_column": "i",
         "col_column": "j",
@@ -193,9 +193,8 @@
         [4,2]
     ],
     "output": {
-        "layername": "inseedata20152017circle",
+        "layername": "inseedatamart20152017",
         "format": "pbf",
-        "geom":"point",
         "storage": "mbtiles",
         "verbose": false,
         "nbquantiles": 9
