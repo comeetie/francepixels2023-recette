@@ -1,65 +1,139 @@
-create table carreaux_geom_metro_2015_2017 as (select 
-c2017.Idcar_200m as IdINSPIRE, i, j,
-c2017.wkb_geometry as wkb_geometry,
-c2017.I_est_200 as I_est_2017,
-c2017.Ind as Ind_2017,
-c2017.Men as Men_2017,
-c2017.Men_pauv as Men_pauv_2017,
-c2017.Men_1ind as Men_1ind_2017,
-c2017.Men_5ind as Men_5ind_2017,
-c2017.Men_prop as Men_prop_2017, 
-c2017.Men_fmp as Men_fmp_2017,
-c2017.Ind_snv as Ind_snv_2017,
-c2017.Men_surf as Men_surf_2017,
-c2017.Men_coll as Men_coll_2017,
-c2017.Men_mais as Men_mais_2017,
-c2017.Log_av45 as Log_av45_2017,
-c2017.Log_45_70 as Log_45_70_2017,
-c2017.Log_70_90 as Log_70_90_2017,
-c2017.Log_ap90 as Log_ap90_2017,
-c2017.Log_inc as Log_inc_2017,
-c2017.Log_soc as Log_soc_2017,
-c2017.Ind_0_3 as Ind_0_3_2017,
-c2017.Ind_4_5 as Ind_4_5_2017,
-c2017.Ind_6_10 as Ind_6_10_2017,
-c2017.Ind_11_17 as Ind_11_17_2017,
-c2017.Ind_18_24 as Ind_18_24_2017,
-c2017.Ind_25_39 as Ind_25_39_2017,
-c2017.Ind_40_54 as Ind_40_54_2017,
-c2017.Ind_55_64 as Ind_55_64_2017,
-c2017.Ind_65_79 as Ind_65_79_2017,
-c2017.Ind_80p as Ind_80p_2017,
-c2017.Ind_inc as Ind_inc_2017,
-c2015.I_est_cr as I_est_2015,
-c2015.Ind as Ind_2015,
-c2015.Men as Men_2015,
-c2015.Men_pauv as Men_pauv_2015,
-c2015.Men_1ind as Men_1ind_2015,
-c2015.Men_5ind as Men_5ind_2015,
-c2015.Men_prop as Men_prop_2015, 
-c2015.Men_fmp as Men_fmp_2015,
-c2015.Ind_snv as Ind_snv_2015,
-c2015.Men_surf as Men_surf_2015,
-c2015.Men_coll as Men_coll_2015,
-c2015.Men_mais as Men_mais_2015,
-c2015.Log_av45 as Log_av45_2015,
-c2015.Log_45_70 as Log_45_70_2015,
-c2015.Log_70_90 as Log_70_90_2015,
-c2015.Log_ap90 as Log_ap90_2015,
-c2015.Log_inc as Log_inc_2015,
-c2015.Log_soc as Log_soc_2015,
-c2015.Ind_0_3 as Ind_0_3_2015,
-c2015.Ind_4_5 as Ind_4_5_2015,
-c2015.Ind_6_10 as Ind_6_10_2015,
-c2015.Ind_11_17 as Ind_11_17_2015,
-c2015.Ind_18_24 as Ind_18_24_2015,
-c2015.Ind_25_39 as Ind_25_39_2015,
-c2015.Ind_40_54 as Ind_40_54_2015,
-c2015.Ind_55_64 as Ind_55_64_2015,
-c2015.Ind_65_79 as Ind_65_79_2015,
-c2015.Ind_80p as Ind_80p_2015,
-c2015.Ind_inc as Ind_inc_2015
-from carreaux_geom_metro_2017 as c2017, carreaux_metro_2015 as c2015 where c2017.Idcar_200m=c2015.IdINSPIRE);
+	create table carreaux_geom_metro_2015_2017 as (select 
+	c2017.Idcar_200m as IdINSPIRE, i, j,
+	c2017.wkb_geometry as wkb_geometry,
+	c2017.I_est_200 as I_est_2017,
+	c2017.Ind as Ind_2017,
+	c2017.Men as Men_2017,
+	c2017.Men_pauv as Men_pauv_2017,
+	c2017.Men_1ind as Men_1ind_2017,
+	c2017.Men_5ind as Men_5ind_2017,
+	c2017.Men_prop as Men_prop_2017, 
+	c2017.Men_fmp as Men_fmp_2017,
+	c2017.Ind_snv as Ind_snv_2017,
+	c2017.Men_surf as Men_surf_2017,
+	c2017.Men_coll as Men_coll_2017,
+	c2017.Men_mais as Men_mais_2017,
+	c2017.Log_av45 as Log_av45_2017,
+	c2017.Log_45_70 as Log_45_70_2017,
+	c2017.Log_70_90 as Log_70_90_2017,
+	c2017.Log_ap90 as Log_ap90_2017,
+	c2017.Log_inc as Log_inc_2017,
+	c2017.Log_soc as Log_soc_2017,
+	c2017.Ind_0_3 as Ind_0_3_2017,
+	c2017.Ind_4_5 as Ind_4_5_2017,
+	c2017.Ind_6_10 as Ind_6_10_2017,
+	c2017.Ind_11_17 as Ind_11_17_2017,
+	c2017.Ind_18_24 as Ind_18_24_2017,
+	c2017.Ind_25_39 as Ind_25_39_2017,
+	c2017.Ind_40_54 as Ind_40_54_2017,
+	c2017.Ind_55_64 as Ind_55_64_2017,
+	c2017.Ind_65_79 as Ind_65_79_2017,
+	c2017.Ind_80p as Ind_80p_2017,
+	c2017.Ind_inc as Ind_inc_2017,
+	c2015.I_est_cr as I_est_2015,
+	c2015.Ind as Ind_2015,
+	c2015.Men as Men_2015,
+	c2015.Men_pauv as Men_pauv_2015,
+	c2015.Men_1ind as Men_1ind_2015,
+	c2015.Men_5ind as Men_5ind_2015,
+	c2015.Men_prop as Men_prop_2015, 
+	c2015.Men_fmp as Men_fmp_2015,
+	c2015.Ind_snv as Ind_snv_2015,
+	c2015.Men_surf as Men_surf_2015,
+	c2015.Men_coll as Men_coll_2015,
+	c2015.Men_mais as Men_mais_2015,
+	c2015.Log_av45 as Log_av45_2015,
+	c2015.Log_45_70 as Log_45_70_2015,
+	c2015.Log_70_90 as Log_70_90_2015,
+	c2015.Log_ap90 as Log_ap90_2015,
+	c2015.Log_inc as Log_inc_2015,
+	c2015.Log_soc as Log_soc_2015,
+	c2015.Ind_0_3 as Ind_0_3_2015,
+	c2015.Ind_4_5 as Ind_4_5_2015,
+	c2015.Ind_6_10 as Ind_6_10_2015,
+	c2015.Ind_11_17 as Ind_11_17_2015,
+	c2015.Ind_18_24 as Ind_18_24_2015,
+	c2015.Ind_25_39 as Ind_25_39_2015,
+	c2015.Ind_40_54 as Ind_40_54_2015,
+	c2015.Ind_55_64 as Ind_55_64_2015,
+	c2015.Ind_65_79 as Ind_65_79_2015,
+	c2015.Ind_80p as Ind_80p_2015,
+	c2015.Ind_inc as Ind_inc_2015
+	from carreaux_geom_metro_2017 as c2017 full outer join carreaux_metro_2015 as c2015 on c2017.Idcar_200m=c2015.IdINSPIRE);
+
+
+-- carreaux sans geom
+Update carreaux_geom_metro_2015_2017 Set i=(regexp_replace(regexp_replace(IdINSPIRE, 'CRS3035RES200mN', ''),'E.*',''))::integer/200 where i is null;
+Update carreaux_geom_metro_2015_2017 Set j=(regexp_replace(regexp_replace(IdINSPIRE, 'CRS3035RES200mN', ''),'.*E',''))::integer/200 where j is null;
+Update carreaux_geom_metro_2015_2017 Set wkb_geometry= ST_GeomFromText('Polygon(('||(j*200)::text||' '||(i*200)::text||','||(j*200)::text||' '||((i-1)*200)::text||','||((j+1)*200)::text||' '||((i-1)*200)::text||','||((j+1)*200)::text||' '||(i*200)::text||','||(j*200)::text||' '||(i*200)::text||'))',3035) where wkb_geometry is null;
+
+-- replace null by 0
+
+UPDATE carreaux_geom_metro_2015_2017
+SET 
+    I_est_2015 = 0,
+    Ind_2015 = 0,
+    Men_2015 = 0,
+    Men_pauv_2015 = 0,
+    Men_1ind_2015 = 0,
+    Men_5ind_2015 = 0,
+    Men_prop_2015 = 0, 
+    Men_fmp_2015 = 0,
+    Ind_snv_2015 = 0,
+    Men_surf_2015 = 0,
+    Men_coll_2015 = 0,
+    Men_mais_2015 = 0,
+    Log_av45_2015 = 0,
+    Log_45_70_2015 = 0,
+    Log_70_90_2015 = 0,
+    Log_ap90_2015 = 0,
+    Log_inc_2015 = 0,
+    Log_soc_2015 = 0,
+    Ind_0_3_2015 = 0,
+    Ind_4_5_2015 = 0,
+    Ind_6_10_2015 = 0,
+    Ind_11_17_2015 = 0,
+    Ind_18_24_2015 = 0,
+    Ind_25_39_2015 = 0,
+    Ind_40_54_2015 = 0,
+    Ind_55_64_2015 = 0,
+    Ind_65_79_2015 = 0,
+    Ind_80p_2015 = 0,
+    Ind_inc_2015 = 0
+WHERE Ind_inc_2015 IS NULL;
+
+UPDATE carreaux_geom_metro_2015_2017
+SET 
+    I_est_2017 = 0,
+    Ind_2017 = 0,
+    Men_2017 = 0,
+    Men_pauv_2017 = 0,
+    Men_1ind_2017 = 0,
+    Men_5ind_2017 = 0,
+    Men_prop_2017 = 0, 
+    Men_fmp_2017 = 0,
+    Ind_snv_2017 = 0,
+    Men_surf_2017 = 0,
+    Men_coll_2017 = 0,
+    Men_mais_2017 = 0,
+    Log_av45_2017 = 0,
+    Log_45_70_2017 = 0,
+    Log_70_90_2017 = 0,
+    Log_ap90_2017 = 0,
+    Log_inc_2017 = 0,
+    Log_soc_2017 = 0,
+    Ind_0_3_2017 = 0,
+    Ind_4_5_2017 = 0,
+    Ind_6_10_2017 = 0,
+    Ind_11_17_2017 = 0,
+    Ind_18_24_2017 = 0,
+    Ind_25_39_2017 = 0,
+    Ind_40_54_2017 = 0,
+    Ind_55_64_2017 = 0,
+    Ind_65_79_2017 = 0,
+    Ind_80p_2017 = 0,
+    Ind_inc_2017 = 0
+WHERE Ind_inc_2017 IS NULL;
 
 
 
@@ -124,7 +198,82 @@ c2015.Ind_55_64 as Ind_55_64_2015,
 c2015.Ind_65_79 as Ind_65_79_2015,
 c2015.Ind_80p as Ind_80p_2015,
 c2015.Ind_inc as Ind_inc_2015
-from carreaux_geom_reun_2017 as c2017, carreaux_reun_2015 as c2015 where c2017.Idcar_200m=c2015.IdINSPIRE);
+from carreaux_geom_reun_2017 as c2017 full outer join carreaux_reun_2015 as c2015 on c2017.Idcar_200m=c2015.IdINSPIRE);
+
+
+
+-- carreaux sans geom
+Update carreaux_geom_reun_2015_2017 Set i=(regexp_replace(regexp_replace(IdINSPIRE, 'CRS2975RES200mN', ''),'E.*',''))::integer/200 where i is null;
+Update carreaux_geom_reun_2015_2017 Set j=(regexp_replace(regexp_replace(IdINSPIRE, 'CRS2975RES200mN', ''),'.*E',''))::integer/200 where j is null;
+Update carreaux_geom_reun_2015_2017 Set wkb_geometry= ST_GeomFromText('Polygon(('||(j*200)::text||' '||(i*200)::text||','||(j*200)::text||' '||((i-1)*200)::text||','||((j+1)*200)::text||' '||((i-1)*200)::text||','||((j+1)*200)::text||' '||(i*200)::text||','||(j*200)::text||' '||(i*200)::text||'))',2975) where wkb_geometry is null;
+
+-- replace null by 0
+
+UPDATE carreaux_geom_reun_2015_2017
+SET 
+    I_est_2015 = 0,
+    Ind_2015 = 0,
+    Men_2015 = 0,
+    Men_pauv_2015 = 0,
+    Men_1ind_2015 = 0,
+    Men_5ind_2015 = 0,
+    Men_prop_2015 = 0, 
+    Men_fmp_2015 = 0,
+    Ind_snv_2015 = 0,
+    Men_surf_2015 = 0,
+    Men_coll_2015 = 0,
+    Men_mais_2015 = 0,
+    Log_av45_2015 = 0,
+    Log_45_70_2015 = 0,
+    Log_70_90_2015 = 0,
+    Log_ap90_2015 = 0,
+    Log_inc_2015 = 0,
+    Log_soc_2015 = 0,
+    Ind_0_3_2015 = 0,
+    Ind_4_5_2015 = 0,
+    Ind_6_10_2015 = 0,
+    Ind_11_17_2015 = 0,
+    Ind_18_24_2015 = 0,
+    Ind_25_39_2015 = 0,
+    Ind_40_54_2015 = 0,
+    Ind_55_64_2015 = 0,
+    Ind_65_79_2015 = 0,
+    Ind_80p_2015 = 0,
+    Ind_inc_2015 = 0
+WHERE Ind_inc_2015 IS NULL;
+
+UPDATE carreaux_geom_reun_2015_2017
+SET 
+    I_est_2017 = 0,
+    Ind_2017 = 0,
+    Men_2017 = 0,
+    Men_pauv_2017 = 0,
+    Men_1ind_2017 = 0,
+    Men_5ind_2017 = 0,
+    Men_prop_2017 = 0, 
+    Men_fmp_2017 = 0,
+    Ind_snv_2017 = 0,
+    Men_surf_2017 = 0,
+    Men_coll_2017 = 0,
+    Men_mais_2017 = 0,
+    Log_av45_2017 = 0,
+    Log_45_70_2017 = 0,
+    Log_70_90_2017 = 0,
+    Log_ap90_2017 = 0,
+    Log_inc_2017 = 0,
+    Log_soc_2017 = 0,
+    Ind_0_3_2017 = 0,
+    Ind_4_5_2017 = 0,
+    Ind_6_10_2017 = 0,
+    Ind_11_17_2017 = 0,
+    Ind_18_24_2017 = 0,
+    Ind_25_39_2017 = 0,
+    Ind_40_54_2017 = 0,
+    Ind_55_64_2017 = 0,
+    Ind_65_79_2017 = 0,
+    Ind_80p_2017 = 0,
+    Ind_inc_2017 = 0
+WHERE Ind_inc_2017 IS NULL;
 
 
 create table carreaux_geom_mart_2015_2017 as (select 
@@ -188,7 +337,78 @@ c2015.Ind_55_64 as Ind_55_64_2015,
 c2015.Ind_65_79 as Ind_65_79_2015,
 c2015.Ind_80p as Ind_80p_2015,
 c2015.Ind_inc as Ind_inc_2015
-from carreaux_geom_mart_2017 as c2017, carreaux_mart_2015 as c2015 where c2017.Idcar_200m=c2015.IdINSPIRE);
+from carreaux_geom_mart_2017 as c2017 full outer join carreaux_mart_2015 as c2015 on c2017.Idcar_200m=c2015.IdINSPIRE);
 
 
+-- carreaux sans geom
+Update carreaux_geom_mart_2015_2017 Set i=(regexp_replace(regexp_replace(IdINSPIRE, 'CRS5490RES200mN', ''),'E.*',''))::integer/200 where i is null;
+Update carreaux_geom_mart_2015_2017 Set j=(regexp_replace(regexp_replace(IdINSPIRE, 'CRS5490RES200mN', ''),'.*E',''))::integer/200 where j is null;
+Update carreaux_geom_mart_2015_2017 Set wkb_geometry= ST_GeomFromText('Polygon(('||(j*200)::text||' '||(i*200)::text||','||(j*200)::text||' '||((i-1)*200)::text||','||((j+1)*200)::text||' '||((i-1)*200)::text||','||((j+1)*200)::text||' '||(i*200)::text||','||(j*200)::text||' '||(i*200)::text||'))',5490) where wkb_geometry is null;
 
+-- replace null by 0
+
+UPDATE carreaux_geom_mart_2015_2017
+SET 
+    I_est_2015 = 0,
+    Ind_2015 = 0,
+    Men_2015 = 0,
+    Men_pauv_2015 = 0,
+    Men_1ind_2015 = 0,
+    Men_5ind_2015 = 0,
+    Men_prop_2015 = 0, 
+    Men_fmp_2015 = 0,
+    Ind_snv_2015 = 0,
+    Men_surf_2015 = 0,
+    Men_coll_2015 = 0,
+    Men_mais_2015 = 0,
+    Log_av45_2015 = 0,
+    Log_45_70_2015 = 0,
+    Log_70_90_2015 = 0,
+    Log_ap90_2015 = 0,
+    Log_inc_2015 = 0,
+    Log_soc_2015 = 0,
+    Ind_0_3_2015 = 0,
+    Ind_4_5_2015 = 0,
+    Ind_6_10_2015 = 0,
+    Ind_11_17_2015 = 0,
+    Ind_18_24_2015 = 0,
+    Ind_25_39_2015 = 0,
+    Ind_40_54_2015 = 0,
+    Ind_55_64_2015 = 0,
+    Ind_65_79_2015 = 0,
+    Ind_80p_2015 = 0,
+    Ind_inc_2015 = 0
+WHERE Ind_inc_2015 IS NULL;
+
+UPDATE carreaux_geom_mart_2015_2017
+SET 
+    I_est_2017 = 0,
+    Ind_2017 = 0,
+    Men_2017 = 0,
+    Men_pauv_2017 = 0,
+    Men_1ind_2017 = 0,
+    Men_5ind_2017 = 0,
+    Men_prop_2017 = 0, 
+    Men_fmp_2017 = 0,
+    Ind_snv_2017 = 0,
+    Men_surf_2017 = 0,
+    Men_coll_2017 = 0,
+    Men_mais_2017 = 0,
+    Log_av45_2017 = 0,
+    Log_45_70_2017 = 0,
+    Log_70_90_2017 = 0,
+    Log_ap90_2017 = 0,
+    Log_inc_2017 = 0,
+    Log_soc_2017 = 0,
+    Ind_0_3_2017 = 0,
+    Ind_4_5_2017 = 0,
+    Ind_6_10_2017 = 0,
+    Ind_11_17_2017 = 0,
+    Ind_18_24_2017 = 0,
+    Ind_25_39_2017 = 0,
+    Ind_40_54_2017 = 0,
+    Ind_55_64_2017 = 0,
+    Ind_65_79_2017 = 0,
+    Ind_80p_2017 = 0,
+    Ind_inc_2017 = 0
+WHERE Ind_inc_2017 IS NULL;
