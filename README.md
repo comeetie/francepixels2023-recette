@@ -1,7 +1,35 @@
 # francepixels2023
 
+Script de création des tuiles vectorielles de francepixels2023 https://www.comeetie.fr/galerie/francepixels2023/
 
-Calcul des quantiles dans postgres :
+- Création des tables et import des données
 
-WITH q AS (SELECT men_pauv/men as v, ntile(8) over (order by men_pauv/men) AS quantile FROM carreaux)
- SELECT max(v) as value, quantile as quantile FROM q GROUP BY quantile ORDER BY quantile;
+import_insee2015.sql
+import_insee2015.sql
+
+- Création des géométries
+
+build_geom_insee.sql
+
+- Merge des données 2015 et 2017 dans une table uniques
+
+merge_20152017.sql
+
+- Créations des tuiles vectorielles avex pypixgrid https://github.com/comeetie/pypixgrid
+
+python3 pypixgrid.py config_metropole_full20152017.json
+python3 pypixgrid.py config_reun_full20152017.json
+python3 pypixgrid.py config_mart_full20152017.json
+
+- Merge des tuiles des différentes régions dans un unique fichier mbtiles avec tipecanoe https://github.com/felt/tippecanoe
+
+merge_reg.sh
+
+Les tuiles produites sont accessibles à l'adresse 
+
+https://www.comeetie.fr/tileserver-php/tileserver.php?/inseedata20152017allreg.json?/inseedata20152017allreg/{z}/{x}/{y}.pbf
+
+Un exemple de fichier de style qgis est disponible dans le répertoire styles_qgis pour afficher les revenus moyens en 2017.
+
+
+
