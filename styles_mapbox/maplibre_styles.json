@@ -11,7 +11,7 @@
   "sources": {
     "carreaux": {
       "type": "vector",
-      "tiles": "https://www.comeetie.fr/tileserver-php/tileserver.php?/inseedata20152017allreg.json?/inseedata20152017allreg/{z}/{x}/{y}.pbf",
+      "tiles": ["https://www.comeetie.fr/tileserver-php/tileserver.php?/inseedata20152017allreg.json?/inseedata20152017allreg/{z}/{x}/{y}.pbf"],
       "maxzoom": 11
     }
   },
@@ -119,7 +119,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -235,7 +235,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -349,7 +349,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -463,7 +463,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -577,7 +577,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -691,7 +691,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -805,7 +805,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -919,7 +919,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -1033,7 +1033,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -1147,7 +1147,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -1261,7 +1261,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -1375,7 +1375,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -1489,7 +1489,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -1603,7 +1603,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -1717,7 +1717,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -1831,7 +1831,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -1945,7 +1945,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -2059,7 +2059,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -2173,7 +2173,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -2287,7 +2287,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -2401,7 +2401,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -2515,7 +2515,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -2629,7 +2629,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -2743,7 +2743,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -2857,7 +2857,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -2971,7 +2971,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -3087,7 +3087,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -3201,7 +3201,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -3315,7 +3315,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -3429,7 +3429,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -3543,7 +3543,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -3657,7 +3657,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -3771,7 +3771,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -3885,7 +3885,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -3999,7 +3999,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -4113,7 +4113,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -4227,7 +4227,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -4341,7 +4341,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -4455,7 +4455,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -4569,7 +4569,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -4683,7 +4683,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -4797,7 +4797,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -4911,7 +4911,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -5025,7 +5025,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -5139,7 +5139,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -5253,7 +5253,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -5367,7 +5367,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -5481,7 +5481,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -5595,7 +5595,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -5709,7 +5709,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "!=",
@@ -5863,7 +5863,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -6032,7 +6032,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -6197,7 +6197,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -6362,7 +6362,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -6527,7 +6527,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -6692,7 +6692,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -6857,7 +6857,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -7022,7 +7022,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -7187,7 +7187,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -7352,7 +7352,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -7517,7 +7517,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -7682,7 +7682,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -7847,7 +7847,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -8012,7 +8012,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -8177,7 +8177,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -8342,7 +8342,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -8507,7 +8507,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -8672,7 +8672,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -8837,7 +8837,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -9002,7 +9002,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -9167,7 +9167,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -9332,7 +9332,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -9497,7 +9497,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -9662,7 +9662,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
@@ -9827,7 +9827,7 @@
       ]
     },
     "layout": {
-      "visibility": "visible"
+      "visibility": "none"
     },
     "filter": [
       "all",
