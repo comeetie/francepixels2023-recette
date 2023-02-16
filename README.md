@@ -12,7 +12,7 @@ import_insee2015.sql
 
 build_geom_insee.sql
 
-- Merge des données 2015 et 2017 dans une table uniques
+- Merge des données 2015 et 2017 dans une table unique par régions
 
 merge_20152017.sql
 
